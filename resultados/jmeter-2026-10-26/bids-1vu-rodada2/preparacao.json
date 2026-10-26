@@ -1,0 +1,19 @@
+{
+    "status": "PRONTO",
+    "scenario": "bids",
+    "host": "localhost",
+    "port": 8080,
+    "users": 1,
+    "durationSeconds": 15,
+    "warmupSeconds": 5,
+    "thinkMs": "100",
+    "timeoutMs": 5000,
+    "javaVersion": "21.0.12.1",
+    "jmeterVersion": "5.6.3",
+    "preparedAt": "2026-10-26T19:40:32.955619272Z",
+    "purchases": [
+        {
+            "id": "06454f17-7604-4ae3-83f3-2ab6f9f69bf5"
+        }
+    ]
+}

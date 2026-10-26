@@ -1,0 +1,97 @@
+{
+    "ok": true,
+    "warmupErrors": 0,
+    "checkedAt": "2026-10-26T19:45:22.217891375Z",
+    "purchases": [
+        {
+            "id": "683e7222-72fb-4fc7-831c-9a9f397476b7",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "d8ddfd73-3ff9-441b-a846-4d33606fa264",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "46dee57a-babc-45da-9091-9c5bc4d2352d",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "a6142f63-8694-40bf-95d1-6331879c0205",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "bdb4a857-dce0-489d-ad12-c1e9500e3fba",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "a8f6a0dc-c651-4f66-b79a-4d25b9b4a447",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "1c56d0e3-6b4a-49db-b189-18ae259fa622",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "0c2199aa-82fc-46e0-b74f-3de568b619a9",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "90afd7f5-ed4a-4aab-9d3b-51390c79afd9",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        },
+        {
+            "id": "e5f03916-5b2e-45bf-b707-e03787f03417",
+            "acceptedIncludingWarmup": 633,
+            "persisted": 633,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        }
+    ]
+}

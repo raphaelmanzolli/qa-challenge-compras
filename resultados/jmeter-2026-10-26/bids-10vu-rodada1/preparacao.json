@@ -1,0 +1,46 @@
+{
+    "status": "PRONTO",
+    "scenario": "bids",
+    "host": "localhost",
+    "port": 8080,
+    "users": 10,
+    "durationSeconds": 60,
+    "warmupSeconds": 5,
+    "thinkMs": "100",
+    "timeoutMs": 5000,
+    "javaVersion": "21.0.12.1",
+    "jmeterVersion": "5.6.3",
+    "preparedAt": "2026-10-26T19:41:39.842051225Z",
+    "purchases": [
+        {
+            "id": "f051fe99-4cc7-4a7d-a809-28e8a0d6047b"
+        },
+        {
+            "id": "26055c8d-19aa-47a7-962f-85ace06e7e30"
+        },
+        {
+            "id": "29ac1ae6-2163-4d88-84af-914f6a482582"
+        },
+        {
+            "id": "7554e4e3-8ffc-47a8-8264-a7e42efee9c3"
+        },
+        {
+            "id": "f957e0de-85c0-4d53-8573-df5e883c2f18"
+        },
+        {
+            "id": "dc396574-1e83-46e3-95a7-928010d72dec"
+        },
+        {
+            "id": "b11abb8b-f89a-4cb7-bab8-e1efb4e0c8a5"
+        },
+        {
+            "id": "79735701-18c1-4bbf-81c1-0a30717938b2"
+        },
+        {
+            "id": "8565287a-3763-499a-8da3-e39e64000e3f"
+        },
+        {
+            "id": "82e13125-3f6e-41c1-9d87-838ed6164cb8"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "ok": true,
+    "warmupErrors": 0,
+    "checkedAt": "2026-10-26T19:40:19.604371163Z",
+    "purchases": [
+        {
+            "id": "c465779c-6f7c-476f-90f9-bc3545398c09",
+            "acceptedIncludingWarmup": 185,
+            "persisted": 185,
+            "matchesAcceptedBids": true,
+            "temporalOrderMatchesAccepted": true,
+            "decreasingInTime": true,
+            "ok": true
+        }
+    ]
+}

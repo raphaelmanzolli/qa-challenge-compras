@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2026-10-24T17:41:02.548583636Z",
+    "traceId": "3724a8f5adbe4298",
+    "message": "Falha inesperada ao processar requisição",
+    "stack": [
+      "java.lang.ArithmeticException: Division by zero",
+      "\tat java.base/java.math.BigDecimal.divide(Unknown Source)",
+      "\tat br.com.qachallenge.compras.lances.LanceService.reducaoRelativa(LanceService.java:144)",
+      "\tat br.com.qachallenge.compras.lances.LanceService.validarValor(LanceService.java:103)",
+      "\tat br.com.qachallenge.compras.lances.LanceService.registrar(LanceService.java:67)",
+      "\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)"
+    ]
+  },
+  {
+    "date": "2026-10-24T17:44:41.351300437Z",
+    "traceId": "977eaa2c6d05432d",
+    "message": "Falha inesperada ao processar requisição",
+    "stack": [
+      "java.lang.ArithmeticException: Division by zero",
+      "\tat java.base/java.math.BigDecimal.divide(Unknown Source)",
+      "\tat br.com.qachallenge.compras.lances.LanceService.reducaoRelativa(LanceService.java:144)",
+      "\tat br.com.qachallenge.compras.lances.LanceService.validarValor(LanceService.java:103)",
+      "\tat br.com.qachallenge.compras.lances.LanceService.registrar(LanceService.java:67)",
+      "\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qualidade:
+    name: Código e ferramentas
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run format:check
+      - run: npm run test:tools
+      - run: npm run test:list
+
+  integracao:
+    name: API e E2E
+    needs: qualidade
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      DISPUTE_OPEN_DELAY_SECONDS: 10
+      DISPUTE_DURATION_SECONDS: 45
+      FRONTEND_POLL_INTERVAL_MS: 2000
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Baixar e verificar a imagem original
+        run: |
+          curl --fail --location --retry 3 \
+            https://github.com/Jonathas-Borges/qa-challenge-compras-candidato/releases/download/v1.0/qa-challenge-compras-1.0.tar \
+            --output qa-challenge-compras-1.0.tar
+          sha256sum --check enunciado/SHA256SUMS
+          docker load --input qa-challenge-compras-1.0.tar
+      - run: npx playwright install --with-deps chromium
+      - name: Subir a aplicação e aguardar saúde
+        run: docker compose up -d --wait --wait-timeout 180
+      - run: npm run preflight
+      - name: Executar os testes com asserções de resultado
+        run: npm test
+      - name: Coletar logs
+        if: always()
+        run: |
+          mkdir -p resultados/ci
+          docker compose logs --no-color > resultados/ci/docker.log
+      - name: Guardar relatório, evidências e logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-playwright
+          path: |
+            playwright-report/
+            test-results/
+            resultados/playwright.json
+            resultados/ci/
+          retention-days: 7
+      - name: Encerrar o ambiente
+        if: always()
+        run: docker compose down

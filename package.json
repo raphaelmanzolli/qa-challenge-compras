@@ -1,0 +1,33 @@
+{
+  "name": "qa-challenge-compras-entrega",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Plano, automação e performance do desafio Compras Diretas",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "preflight": "node scripts/preflight.mjs",
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:flow": "playwright test --project=chromium --grep E2E-01",
+    "test:bugs": "playwright test --grep \"API-07|API-08|API-10|REG-001\"",
+    "test:e2e": "playwright test --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:list": "playwright test --list",
+    "test:tools": "node --test scripts/tooling.test.mjs",
+    "report": "playwright show-report",
+    "perf:read": "node performance/cli.mjs read",
+    "perf:bids": "node performance/cli.mjs bids",
+    "perf:campaign": "node performance/cli.mjs campaign",
+    "check": "node scripts/check.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:jmeter": "node --test scripts/jmeter.test.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "prettier": "3.9.10"
+  }
+}

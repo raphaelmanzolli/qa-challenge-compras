@@ -1,0 +1,55 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 639 >>
+stream
+BT
+/F1 12 Tf
+50 790 Td
+16 TL
+(Relatorio de resultado) Tj T*
+() Tj T*
+(Codigo: CD-000467) Tj T*
+(Objeto: QA cadeiras 4bea2fe3-01bd-4a21-91cf-ff2becb49a65) Tj T*
+(Status: HOMOLOGADA) Tj T*
+(Quantidade: 3) Tj T*
+(Valor maximo unitario: R$ 120,50) Tj T*
+(Menor lance unitario: R$ 120,00) Tj T*
+(Total de lances: 2) Tj T*
+(Vencedor: Fornecedor Alpha) Tj T*
+(Valor unitario vencedor: R$ 119,50) Tj T*
+(Valor total vencedor: R$ 358,50) Tj T*
+(Homologada em: 26/10/2026 16:34) Tj T*
+() Tj T*
+(Historico de lances:) Tj T*
+(#2  R$ 119,50  Fornecedor Alpha) Tj T*
+(#1  R$ 120,50  Fornecedor Beta) Tj T*
+() Tj T*
+(Gerado em: 26/10/2026 16:34) Tj T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000338 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1028
+%%EOF

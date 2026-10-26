@@ -1,0 +1,29 @@
+{
+  "id": "601de40c-00f1-4eaf-ae72-8dc7f61af8be",
+  "codigo": "CD-000467",
+  "objeto": "QA cadeiras 4bea2fe3-01bd-4a21-91cf-ff2becb49a65",
+  "descricao": "Dados fictícios criados pela automação",
+  "status": "HOMOLOGADA",
+  "quantidade": 3,
+  "valorMaximoUnitario": 120.5,
+  "valorTotalEstimado": 361.5,
+  "menorLanceUnitario": 119.5,
+  "totalLances": 2,
+  "orgao": {
+    "id": "1190ec0b-cccd-4f7f-8a78-e18c5a5b77ae",
+    "nome": "Unidade Compradora Demo"
+  },
+  "createdAt": "2026-10-26T19:33:20.759Z",
+  "publishedAt": "2026-10-26T19:33:21.339Z",
+  "opensAt": "2026-10-26T19:33:31.339Z",
+  "closesAt": "2026-10-26T19:34:16.339Z",
+  "homologatedAt": "2026-10-26T19:34:17.453Z",
+  "vencedor": {
+    "lanceId": "5f7450ed-222e-4600-aede-e5ded92331e8",
+    "fornecedorId": "32cf6e9a-c446-433d-978d-cc1c95a0029f",
+    "fornecedorNome": "Fornecedor Alpha",
+    "valorUnitario": 119.5,
+    "valorTotal": 358.5
+  },
+  "serverNow": "2026-10-26T19:34:17.470Z"
+}

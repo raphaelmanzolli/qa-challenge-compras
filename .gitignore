@@ -1,0 +1,43 @@
+# Dependências e configuração local
+node_modules/
+.env
+.env.*
+!.env.example
+*.tar
+*.zip
+__pycache__/
+*.pyc
+
+# Relatórios regeneráveis e traces (podem conter autenticação demo)
+playwright-report/
+test-results/
+
+# Histórico de instalação específico desta máquina
+docs/06-preparacao-do-ambiente.md
+
+# Evidências selecionadas para a entrega; demais saídas ficam locais
+resultados/*
+!resultados/README.md
+!resultados/bugs/
+!resultados/automacao-2026-10-26/
+!resultados/manual-2026-10-24/
+!resultados/jmeter-2026-10-26/
+resultados/jmeter-2026-10-26/**
+!resultados/jmeter-2026-10-26/campanha.json
+!resultados/jmeter-2026-10-26/resumo.md
+!resultados/jmeter-2026-10-26/*/
+!resultados/jmeter-2026-10-26/*/execucao.json
+!resultados/jmeter-2026-10-26/*/preparacao.json
+!resultados/jmeter-2026-10-26/*/consistencia.json
+!resultados/jmeter-2026-10-26/*/statistics.json
+!resultados/jmeter-2026-10-26/*/resultados.jtl
+!resultados/diagnostico/
+resultados/diagnostico/*
+!resultados/diagnostico/excecoes-resumo.json
+
+# Preferências locais de colaboração, fora da entrega
+/AGENTS.md
+
+# Material pessoal de estudo não faz parte da entrega
+APRESENTACAO.md
+docs/05-guia-de-estudo.md

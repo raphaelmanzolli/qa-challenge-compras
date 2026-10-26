@@ -1,0 +1,69 @@
+Browser tab: 1, Title: "QA Challenge — Compras Diretas", URL: "http://localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23".
+1 AXWebArea QA Challenge — Compras Diretas, URL: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23
+	2 container app
+		3 link Description: Pular para o conteúdo, Value: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23#conteudo
+		4 container
+			5 link Description: QA Challenge — Compras Diretas, Value: localhost:8080/compras
+			6 container Principal
+				7 link Description: Compras, Value: localhost:8080/compras
+				8 link Description: Nova compra, Value: localhost:8080/compras/nova
+			9 text Unidade Compradora Demo ORGAO
+			10 button Sair
+		11 container
+			12 heading CD-000306 — QA manual cadeiras 24-10-2026, Value: 1
+				13 text CD-000306  — QA manual cadeiras 24-10-2026
+			67 text ENCERRADA (Encerrada)
+			68 button Homologar
+			17 link Description: Ver disputa, Value: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/disputa
+			69 link Description: Ver resultado, Value: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/resultado
+			18 link Description: Voltar, Value: localhost:8080/compras
+			19 container Resumo
+				20 heading Resumo, Value: 2, ID: resumo-titulo
+					21 text Resumo
+				22 definition list
+					23 container Quantidade
+						24 text Quantidade
+					25 text 4
+					26 container Valor máximo unitário
+						27 text Valor máximo unitário
+					28 text R$ 450,00
+					29 container Valor total estimado
+						30 text Valor total estimado
+					31 text R$ 1.800,00
+					32 container Menor lance unitário
+						33 text Menor lance unitário
+					34 text R$ 448,00
+					35 container Lances registrados
+						36 text Lances registrados
+					37 text 3
+					38 container Órgão
+						39 text Órgão
+					40 text Unidade Compradora Demo
+			41 container Datas
+				42 heading Datas, Value: 2, ID: datas-titulo
+					43 text Datas
+				44 definition list
+					45 container Criada em
+						46 text Criada em
+					47 text 24/10/2026, 14:29:40
+					48 container Publicada em
+						49 text Publicada em
+					50 text 24/10/2026, 14:30:08
+					51 container Abertura da disputa
+						52 text Abertura da disputa
+					53 text 24/10/2026, 14:30:18
+					54 container Encerramento da disputa
+						55 text Encerramento da disputa
+					56 text 24/10/2026, 14:31:03
+					57 container Homologada em
+						58 text Homologada em
+					59 text —
+					60 container Horário do servidor
+						61 text Horário do servidor
+					70 text 24/10/2026, 14:31:05
+			63 container Descrição
+				64 heading Descrição, Value: 2, ID: descricao-titulo
+					65 text Descrição
+				66 text Execução exploratória CT-001
+
+The focused UI element is 1 AXWebArea QA Challenge — Compras Diretas, URL: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23

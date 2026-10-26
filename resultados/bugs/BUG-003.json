@@ -1,0 +1,51 @@
+{
+  "compraId": "cddd1a87-45e2-4589-b1c3-35ffa7002147",
+  "respostas": [
+    {
+      "status": 201,
+      "traceId": "12efed2eb2e544a3",
+      "body": {
+        "id": "15192f59-0157-4a92-a0a1-6f9a31b827d9",
+        "compraId": "cddd1a87-45e2-4589-b1c3-35ffa7002147",
+        "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+        "fornecedorNome": "Fornecedor Alpha",
+        "valorUnitario": 450,
+        "createdAt": "2026-10-24T17:44:53.760Z",
+        "sequencia": 1
+      }
+    },
+    {
+      "status": 201,
+      "traceId": "b6053a30e1304255",
+      "body": {
+        "id": "41bf8e41-ec66-4d86-8c27-5492ec8d9f10",
+        "compraId": "cddd1a87-45e2-4589-b1c3-35ffa7002147",
+        "fornecedorId": "5fbc2878-f67b-4489-9339-054658e18416",
+        "fornecedorNome": "Fornecedor Beta",
+        "valorUnitario": 450,
+        "createdAt": "2026-10-24T17:44:53.764Z",
+        "sequencia": 2
+      }
+    }
+  ],
+  "historico": [
+    {
+      "id": "41bf8e41-ec66-4d86-8c27-5492ec8d9f10",
+      "compraId": "cddd1a87-45e2-4589-b1c3-35ffa7002147",
+      "fornecedorId": "5fbc2878-f67b-4489-9339-054658e18416",
+      "fornecedorNome": "Fornecedor Beta",
+      "valorUnitario": 450,
+      "createdAt": "2026-10-24T17:44:53.764Z",
+      "sequencia": 2
+    },
+    {
+      "id": "15192f59-0157-4a92-a0a1-6f9a31b827d9",
+      "compraId": "cddd1a87-45e2-4589-b1c3-35ffa7002147",
+      "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+      "fornecedorNome": "Fornecedor Alpha",
+      "valorUnitario": 450,
+      "createdAt": "2026-10-24T17:44:53.760Z",
+      "sequencia": 1
+    }
+  ]
+}

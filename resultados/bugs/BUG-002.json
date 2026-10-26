@@ -1,0 +1,23 @@
+{
+  "compraId": "51d426cc-095c-44ff-a642-298bc33b8f26",
+  "valor": 450,
+  "status": 500,
+  "traceId": "977eaa2c6d05432d",
+  "resposta": {
+    "code": "UNEXPECTED_ERROR",
+    "message": "Erro inesperado. Informe o traceId ao suporte.",
+    "timestamp": "2026-10-24T17:44:41.354150658Z",
+    "traceId": "977eaa2c6d05432d"
+  },
+  "historico": [
+    {
+      "id": "c58edf1e-f99f-48f0-90d4-2b8da161f950",
+      "compraId": "51d426cc-095c-44ff-a642-298bc33b8f26",
+      "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+      "fornecedorNome": "Fornecedor Alpha",
+      "valorUnitario": 450,
+      "createdAt": "2026-10-24T17:44:41.329Z",
+      "sequencia": 1
+    }
+  ]
+}

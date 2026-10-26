@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Casos de teste e bugs'
+  short_description: 'Planejar testes e documentar defeitos com evidências'
+  default_prompt: 'Use $qa-test-design para criar casos de teste rastreáveis ou documentar um bug com as evidências fornecidas.'

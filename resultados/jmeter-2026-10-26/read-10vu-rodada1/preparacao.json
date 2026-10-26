@@ -1,0 +1,46 @@
+{
+    "status": "PRONTO",
+    "scenario": "read",
+    "host": "localhost",
+    "port": 8080,
+    "users": 10,
+    "durationSeconds": 60,
+    "warmupSeconds": 5,
+    "thinkMs": "100",
+    "timeoutMs": 5000,
+    "javaVersion": "21.0.12.1",
+    "jmeterVersion": "5.6.3",
+    "preparedAt": "2026-10-26T19:36:18.296571533Z",
+    "purchases": [
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        },
+        {
+            "id": "e0e97722-3da1-4909-9b53-1a2b7a766f28"
+        }
+    ]
+}

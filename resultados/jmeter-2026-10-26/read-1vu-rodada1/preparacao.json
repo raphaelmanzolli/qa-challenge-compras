@@ -1,0 +1,19 @@
+{
+    "status": "PRONTO",
+    "scenario": "read",
+    "host": "localhost",
+    "port": 8080,
+    "users": 1,
+    "durationSeconds": 15,
+    "warmupSeconds": 5,
+    "thinkMs": "100",
+    "timeoutMs": 5000,
+    "javaVersion": "21.0.12.1",
+    "jmeterVersion": "5.6.3",
+    "preparedAt": "2026-10-26T19:35:08.670460250Z",
+    "purchases": [
+        {
+            "id": "3324802d-2d19-47ed-b7a9-2212ef026d66"
+        }
+    ]
+}

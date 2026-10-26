@@ -1,0 +1,50 @@
+{
+  "status": "CONCLUIDO",
+  "scenario": "bids",
+  "users": 1,
+  "durationSeconds": 15,
+  "warmupSeconds": 5,
+  "thinkMs": 100,
+  "timeoutMs": 5000,
+  "baseUrl": "http://localhost:8080/",
+  "p95LimitMs": 1000,
+  "maxErrorRate": 0.01,
+  "startedAt": "2026-10-26T19:40:54.9558355Z",
+  "plan": "lances.jmx",
+  "planSha256": "7182B4826DE3445196A8EBEDBA23F6D5302A7D94D39BDC074618FC0202D9D8B2",
+  "jmeterVersion": "5.6.3",
+  "statistics": {
+    "transaction": "Total",
+    "sampleCount": 143,
+    "errorCount": 0,
+    "errorPct": 0.0,
+    "meanResTime": 3.608391608391608,
+    "medianResTime": 3.0,
+    "minResTime": 2.0,
+    "maxResTime": 10.0,
+    "pct1ResTime": 5.0,
+    "pct2ResTime": 5.0,
+    "pct3ResTime": 8.680000000000007,
+    "throughput": 9.619265437912015,
+    "receivedKBytesPerSec": 7.636448103053949,
+    "sentKBytesPerSec": 5.434288498082874
+  },
+  "consistency": {
+    "ok": true,
+    "warmupErrors": 0,
+    "checkedAt": "2026-10-26T19:41:26.356461799Z",
+    "purchases": [
+      {
+        "id": "42d9e8ee-4b06-4f04-aaaf-4ea19d5fb1f3",
+        "acceptedIncludingWarmup": 189,
+        "persisted": 189,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      }
+    ]
+  },
+  "passed": true,
+  "finishedAt": "2026-10-26T19:41:28.3441705Z"
+}

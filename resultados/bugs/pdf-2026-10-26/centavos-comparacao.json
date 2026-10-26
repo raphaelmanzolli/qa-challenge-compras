@@ -1,0 +1,20 @@
+{
+  "capturadoEm": "2026-10-26T19:34:59.303Z",
+  "compraId": "601de40c-00f1-4eaf-ae72-8dc7f61af8be",
+  "codigo": "CD-000467",
+  "ambiente": "Linux; qa-challenge-compras:1.0; Chromium; fornecedor.a",
+  "tela": "Vencedor: Fornecedor Alpha com R$ 119,50 por unidade (total R$ 358,50).",
+  "api": {
+    "quantidade": 3,
+    "valorMaximoUnitario": 120.5,
+    "menorLanceUnitario": 119.5,
+    "vencedor": {
+      "lanceId": "5f7450ed-222e-4600-aede-e5ded92331e8",
+      "fornecedorId": "32cf6e9a-c446-433d-978d-cc1c95a0029f",
+      "fornecedorNome": "Fornecedor Alpha",
+      "valorUnitario": 119.5,
+      "valorTotal": 358.5
+    }
+  },
+  "textoPdf": "Relatorio de resultado\n\nCodigo: CD-000467\nObjeto: QA cadeiras 4bea2fe3-01bd-4a21-91cf-ff2becb49a65\nStatus: HOMOLOGADA\nQuantidade: 3\nValor maximo unitario: R$ 120,50\nMenor lance unitario: R$ 120,00\nTotal de lances: 2\nVencedor: Fornecedor Alpha\nValor unitario vencedor: R$ 119,50\nValor total vencedor: R$ 358,50\nHomologada em: 26/10/2026 16:34\n\nHistorico de lances:\n#2 R$ 119,50 Fornecedor Alpha\n#1 R$ 120,50 Fornecedor Beta\n\nGerado em: 26/10/2026 16:34\n\f"
+}

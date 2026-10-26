@@ -1,0 +1,620 @@
+{
+  "checkedAt": "2026-10-24T17:35:38.624Z",
+  "base": "http://localhost:8080",
+  "checks": [
+    {
+      "name": "Login comprador",
+      "status": 200,
+      "usuario": {
+        "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+        "login": "comprador",
+        "nomeExibicao": "Unidade Compradora Demo",
+        "papel": "ORGAO"
+      }
+    },
+    {
+      "name": "Login fornecedor.a",
+      "status": 200,
+      "usuario": {
+        "id": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+        "login": "fornecedor.a",
+        "nomeExibicao": "Fornecedor Alpha",
+        "papel": "FORNECEDOR"
+      }
+    },
+    {
+      "name": "CT-032: resultado homologado",
+      "method": "GET",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "ad150c979919436f",
+      "body": {
+        "id": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+        "codigo": "CD-000306",
+        "objeto": "QA manual cadeiras 24-10-2026",
+        "descricao": "Execução exploratória CT-001",
+        "status": "HOMOLOGADA",
+        "quantidade": 4,
+        "valorMaximoUnitario": 450,
+        "valorTotalEstimado": 1800,
+        "menorLanceUnitario": 448,
+        "totalLances": 3,
+        "orgao": {
+          "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+          "nome": "Unidade Compradora Demo"
+        },
+        "createdAt": "2026-10-24T17:29:40.923Z",
+        "publishedAt": "2026-10-24T17:30:08.213Z",
+        "opensAt": "2026-10-24T17:30:18.213Z",
+        "closesAt": "2026-10-24T17:31:03.213Z",
+        "homologatedAt": "2026-10-24T17:31:29.916Z",
+        "vencedor": {
+          "lanceId": "7c245ade-f47d-4e80-973c-5f44d58d6045",
+          "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+          "fornecedorNome": "Fornecedor Alpha",
+          "valorUnitario": 448,
+          "valorTotal": 1792
+        },
+        "serverNow": "2026-10-24T17:35:38.396Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-019: lances persistidos",
+      "method": "GET",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/lances",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "c24d8a0b352d4a41",
+      "body": [
+        {
+          "id": "7c245ade-f47d-4e80-973c-5f44d58d6045",
+          "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+          "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+          "fornecedorNome": "Fornecedor Alpha",
+          "valorUnitario": 448,
+          "createdAt": "2026-10-24T17:30:42.008Z",
+          "sequencia": 3
+        },
+        {
+          "id": "f67c2449-16e0-4706-95e6-e47e8ce49a06",
+          "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+          "fornecedorId": "5fbc2878-f67b-4489-9339-054658e18416",
+          "fornecedorNome": "Fornecedor Beta",
+          "valorUnitario": 449,
+          "createdAt": "2026-10-24T17:30:37.110Z",
+          "sequencia": 2
+        },
+        {
+          "id": "01a14f64-ff9e-4cac-b49c-78c79ee54435",
+          "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+          "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+          "fornecedorNome": "Fornecedor Alpha",
+          "valorUnitario": 450,
+          "createdAt": "2026-10-24T17:30:24.325Z",
+          "sequencia": 1
+        }
+      ],
+      "passedStatus": true
+    },
+    {
+      "name": "CT-038: auditoria",
+      "method": "GET",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/historico",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "17484a9e860444b7",
+      "body": {
+        "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+        "codigo": "CD-000306",
+        "eventos": [
+          {
+            "tipo": "COMPRA_CRIADA",
+            "ocorridoEm": "2026-10-24T17:29:40.923Z",
+            "usuarioLogin": "comprador",
+            "usuarioNome": "Unidade Compradora Demo",
+            "resumo": "Compra CD-000306 criada em rascunho por comprador",
+            "derivado": false
+          },
+          {
+            "tipo": "COMPRA_PUBLICADA",
+            "ocorridoEm": "2026-10-24T17:30:08.213Z",
+            "usuarioLogin": "comprador",
+            "usuarioNome": "Unidade Compradora Demo",
+            "resumo": "Compra publicada; abertura em 2026-10-24T17:30:18.213Z e encerramento em 2026-10-24T17:31:03.213Z",
+            "derivado": false
+          },
+          {
+            "tipo": "DISPUTA_ABERTA",
+            "ocorridoEm": "2026-10-24T17:30:18.213Z",
+            "usuarioLogin": null,
+            "usuarioNome": null,
+            "resumo": "Disputa aberta para lances (horário do servidor)",
+            "derivado": true
+          },
+          {
+            "tipo": "LANCE_REGISTRADO",
+            "ocorridoEm": "2026-10-24T17:30:24.325Z",
+            "usuarioLogin": "fornecedor.a",
+            "usuarioNome": "Fornecedor Alpha",
+            "resumo": "Lance #1 de R$ 450.00 por Fornecedor Alpha",
+            "derivado": false
+          },
+          {
+            "tipo": "LANCE_REGISTRADO",
+            "ocorridoEm": "2026-10-24T17:30:37.110Z",
+            "usuarioLogin": "fornecedor.b",
+            "usuarioNome": "Fornecedor Beta",
+            "resumo": "Lance #2 de R$ 449.00 por Fornecedor Beta",
+            "derivado": false
+          },
+          {
+            "tipo": "LANCE_REGISTRADO",
+            "ocorridoEm": "2026-10-24T17:30:42.008Z",
+            "usuarioLogin": "fornecedor.a",
+            "usuarioNome": "Fornecedor Alpha",
+            "resumo": "Lance #3 de R$ 448.00 por Fornecedor Alpha",
+            "derivado": false
+          },
+          {
+            "tipo": "DISPUTA_ENCERRADA",
+            "ocorridoEm": "2026-10-24T17:31:03.213Z",
+            "usuarioLogin": null,
+            "usuarioNome": null,
+            "resumo": "Disputa encerrada com 3 lance(s)",
+            "derivado": true
+          },
+          {
+            "tipo": "COMPRA_HOMOLOGADA",
+            "ocorridoEm": "2026-10-24T17:31:29.916Z",
+            "usuarioLogin": "comprador",
+            "usuarioNome": "Unidade Compradora Demo",
+            "resumo": "Homologada para Fornecedor Alpha com lance unitário de R$ 448.00",
+            "derivado": false
+          }
+        ],
+        "serverNow": "2026-10-24T17:35:38.417Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-006: fatores e total da compra mínima",
+      "method": "GET",
+      "path": "/api/compras/0414728d-d916-44ef-be83-c27d6bc80fbe",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "daeddf36c80641fb",
+      "body": {
+        "id": "0414728d-d916-44ef-be83-c27d6bc80fbe",
+        "codigo": "CD-000307",
+        "objeto": "abcde",
+        "descricao": null,
+        "status": "RASCUNHO",
+        "quantidade": 1,
+        "valorMaximoUnitario": 0.01,
+        "valorTotalEstimado": 0.01,
+        "menorLanceUnitario": null,
+        "totalLances": 0,
+        "orgao": {
+          "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+          "nome": "Unidade Compradora Demo"
+        },
+        "createdAt": "2026-10-24T17:32:41.554Z",
+        "publishedAt": null,
+        "opensAt": null,
+        "closesAt": null,
+        "homologatedAt": null,
+        "vencedor": null,
+        "serverNow": "2026-10-24T17:35:38.431Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-011: rascunho oculto ao fornecedor",
+      "method": "GET",
+      "path": "/api/compras/0414728d-d916-44ef-be83-c27d6bc80fbe",
+      "expectedStatus": 404,
+      "status": 404,
+      "traceId": "1d52576c0c9847b7",
+      "body": {
+        "code": "COMPRA_NAO_ENCONTRADA",
+        "message": "Compra não encontrada.",
+        "timestamp": "2026-10-24T17:35:38.440235017Z",
+        "traceId": "1d52576c0c9847b7"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-010: criação por fornecedor",
+      "method": "POST",
+      "path": "/api/compras",
+      "data": {
+        "objeto": "QA permissao fornecedor",
+        "quantidade": 4,
+        "valorMaximoUnitario": 450
+      },
+      "expectedStatus": 403,
+      "status": 403,
+      "traceId": "b2715dc4b6914e32",
+      "body": {
+        "code": "ACESSO_NEGADO",
+        "message": "Seu perfil não tem permissão para esta ação.",
+        "timestamp": "2026-10-24T17:35:38.445109704Z",
+        "traceId": "b2715dc4b6914e32"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-010: publicação por fornecedor",
+      "method": "POST",
+      "path": "/api/compras/0414728d-d916-44ef-be83-c27d6bc80fbe/publicar",
+      "expectedStatus": 403,
+      "status": 403,
+      "traceId": "7ee5a23e30bf4661",
+      "body": {
+        "code": "ACESSO_NEGADO",
+        "message": "Seu perfil não tem permissão para esta ação.",
+        "timestamp": "2026-10-24T17:35:38.449583376Z",
+        "traceId": "7ee5a23e30bf4661"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-033: homologação por fornecedor",
+      "method": "POST",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/homologar",
+      "expectedStatus": 403,
+      "status": 403,
+      "traceId": "466469ab70264707",
+      "body": {
+        "code": "ACESSO_NEGADO",
+        "message": "Seu perfil não tem permissão para esta ação.",
+        "timestamp": "2026-10-24T17:35:38.454467164Z",
+        "traceId": "466469ab70264707"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-037: homologação duplicada",
+      "method": "POST",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/homologar",
+      "expectedStatus": 409,
+      "status": 409,
+      "traceId": "6e3e9c5a709d48ad",
+      "body": {
+        "code": "COMPRA_JA_HOMOLOGADA",
+        "message": "A compra já foi homologada.",
+        "timestamp": "2026-10-24T17:35:38.462755182Z",
+        "traceId": "6e3e9c5a709d48ad"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-017/037: lance depois de homologada",
+      "method": "POST",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/lances",
+      "data": {
+        "valorUnitario": 447
+      },
+      "expectedStatus": 409,
+      "status": 409,
+      "traceId": "b59d42a741454434",
+      "body": {
+        "code": "DISPUTA_NAO_ABERTA",
+        "message": "A compra já foi homologada; lances não são mais aceitos.",
+        "timestamp": "2026-10-24T17:35:38.471207807Z",
+        "traceId": "b59d42a741454434"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-043: acesso sem token",
+      "method": "GET",
+      "path": "/api/compras",
+      "expectedStatus": 401,
+      "status": 401,
+      "traceId": "0ce07ac4ccca4017",
+      "body": {
+        "code": "NAO_AUTENTICADO",
+        "message": "Token ausente, inválido ou expirado.",
+        "timestamp": "2026-10-24T17:35:38.475204161Z",
+        "traceId": "0ce07ac4ccca4017"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-043: token inválido",
+      "method": "GET",
+      "path": "/api/compras",
+      "expectedStatus": 401,
+      "status": 401,
+      "traceId": "28d9e51c0d2e407f",
+      "body": {
+        "code": "NAO_AUTENTICADO",
+        "message": "Token ausente, inválido ou expirado.",
+        "timestamp": "2026-10-24T17:35:38.478322980Z",
+        "traceId": "28d9e51c0d2e407f"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-022/037: lances após rejeições",
+      "method": "GET",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/lances",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "b44fc3cb407445e4",
+      "body": [
+        {
+          "id": "7c245ade-f47d-4e80-973c-5f44d58d6045",
+          "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+          "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+          "fornecedorNome": "Fornecedor Alpha",
+          "valorUnitario": 448,
+          "createdAt": "2026-10-24T17:30:42.008Z",
+          "sequencia": 3
+        },
+        {
+          "id": "f67c2449-16e0-4706-95e6-e47e8ce49a06",
+          "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+          "fornecedorId": "5fbc2878-f67b-4489-9339-054658e18416",
+          "fornecedorNome": "Fornecedor Beta",
+          "valorUnitario": 449,
+          "createdAt": "2026-10-24T17:30:37.110Z",
+          "sequencia": 2
+        },
+        {
+          "id": "01a14f64-ff9e-4cac-b49c-78c79ee54435",
+          "compraId": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+          "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+          "fornecedorNome": "Fornecedor Alpha",
+          "valorUnitario": 450,
+          "createdAt": "2026-10-24T17:30:24.325Z",
+          "sequencia": 1
+        }
+      ],
+      "passedStatus": true
+    },
+    {
+      "name": "CT-010: rascunho inalterado após rejeições",
+      "method": "GET",
+      "path": "/api/compras/0414728d-d916-44ef-be83-c27d6bc80fbe",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "10425ddd972a4a8a",
+      "body": {
+        "id": "0414728d-d916-44ef-be83-c27d6bc80fbe",
+        "codigo": "CD-000307",
+        "objeto": "abcde",
+        "descricao": null,
+        "status": "RASCUNHO",
+        "quantidade": 1,
+        "valorMaximoUnitario": 0.01,
+        "valorTotalEstimado": 0.01,
+        "menorLanceUnitario": null,
+        "totalLances": 0,
+        "orgao": {
+          "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+          "nome": "Unidade Compradora Demo"
+        },
+        "createdAt": "2026-10-24T17:32:41.554Z",
+        "publishedAt": null,
+        "opensAt": null,
+        "closesAt": null,
+        "homologatedAt": null,
+        "vencedor": null,
+        "serverNow": "2026-10-24T17:35:38.496Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-006: reprodução com total 0.30",
+      "method": "GET",
+      "path": "/api/compras/e2004328-8213-484c-ab30-4dd877b17a85",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "7ccb5e6db3a443d1",
+      "body": {
+        "id": "e2004328-8213-484c-ab30-4dd877b17a85",
+        "codigo": "CD-000308",
+        "objeto": "QA centavos reproducao CT-006",
+        "descricao": null,
+        "status": "RASCUNHO",
+        "quantidade": 3,
+        "valorMaximoUnitario": 0.1,
+        "valorTotalEstimado": 0.3,
+        "menorLanceUnitario": null,
+        "totalLances": 0,
+        "orgao": {
+          "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+          "nome": "Unidade Compradora Demo"
+        },
+        "createdAt": "2026-10-24T17:33:22.973Z",
+        "publishedAt": null,
+        "opensAt": null,
+        "closesAt": null,
+        "homologatedAt": null,
+        "vencedor": null,
+        "serverNow": "2026-10-24T17:35:38.502Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-008: publicação duplicada",
+      "method": "POST",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/publicar",
+      "expectedStatus": 409,
+      "status": 409,
+      "traceId": "1c1a27a7a64b406f",
+      "body": {
+        "code": "COMPRA_JA_PUBLICADA",
+        "message": "A compra já foi publicada e não pode ser publicada novamente.",
+        "timestamp": "2026-10-24T17:35:38.510246807Z",
+        "traceId": "1c1a27a7a64b406f"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-034: homologação em RASCUNHO",
+      "method": "POST",
+      "path": "/api/compras/0414728d-d916-44ef-be83-c27d6bc80fbe/homologar",
+      "expectedStatus": 409,
+      "status": 409,
+      "traceId": "fcba82944a504824",
+      "body": {
+        "code": "DISPUTA_NAO_ENCERRADA",
+        "message": "A homologação só é permitida após o encerramento da disputa (status atual: RASCUNHO).",
+        "timestamp": "2026-10-24T17:35:38.516556050Z",
+        "traceId": "fcba82944a504824"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-026: compra sem lances DESERTA",
+      "method": "GET",
+      "path": "/api/compras/ad5e7733-e030-458e-b1b4-b4cec2e36024",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "99cb68bafa5a40aa",
+      "body": {
+        "id": "ad5e7733-e030-458e-b1b4-b4cec2e36024",
+        "codigo": "CD-000309",
+        "objeto": "QA maximo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "descricao": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "status": "DESERTA",
+        "quantidade": 100,
+        "valorMaximoUnitario": 1000000,
+        "valorTotalEstimado": 100000000,
+        "menorLanceUnitario": null,
+        "totalLances": 0,
+        "orgao": {
+          "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+          "nome": "Unidade Compradora Demo"
+        },
+        "createdAt": "2026-10-24T17:33:36.248Z",
+        "publishedAt": "2026-10-24T17:33:45.503Z",
+        "opensAt": "2026-10-24T17:33:55.503Z",
+        "closesAt": "2026-10-24T17:34:40.503Z",
+        "homologatedAt": null,
+        "vencedor": null,
+        "serverNow": "2026-10-24T17:35:38.521Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-035: homologação de DESERTA",
+      "method": "POST",
+      "path": "/api/compras/ad5e7733-e030-458e-b1b4-b4cec2e36024/homologar",
+      "expectedStatus": [
+        409,
+        422
+      ],
+      "status": 422,
+      "traceId": "9d53165094254d15",
+      "body": {
+        "code": "DISPUTA_SEM_LANCES",
+        "message": "Compra deserta (sem lances) não pode ser homologada.",
+        "timestamp": "2026-10-24T17:35:38.529987766Z",
+        "traceId": "9d53165094254d15"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-017: lance em DESERTA",
+      "method": "POST",
+      "path": "/api/compras/ad5e7733-e030-458e-b1b4-b4cec2e36024/lances",
+      "data": {
+        "valorUnitario": 999999
+      },
+      "expectedStatus": 409,
+      "status": 409,
+      "traceId": "9a51591d0c8d466e",
+      "body": {
+        "code": "DISPUTA_NAO_ABERTA",
+        "message": "A disputa está encerrada; lances não são mais aceitos.",
+        "timestamp": "2026-10-24T17:35:38.536542918Z",
+        "traceId": "9a51591d0c8d466e"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-037: resultado final após tentativas inválidas",
+      "method": "GET",
+      "path": "/api/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "9ac5b79a016b424f",
+      "body": {
+        "id": "072e76d5-60e7-4b46-a112-ce6f8c83ba23",
+        "codigo": "CD-000306",
+        "objeto": "QA manual cadeiras 24-10-2026",
+        "descricao": "Execução exploratória CT-001",
+        "status": "HOMOLOGADA",
+        "quantidade": 4,
+        "valorMaximoUnitario": 450,
+        "valorTotalEstimado": 1800,
+        "menorLanceUnitario": 448,
+        "totalLances": 3,
+        "orgao": {
+          "id": "6421b4fb-a37a-4ce9-bb78-700b6c027a55",
+          "nome": "Unidade Compradora Demo"
+        },
+        "createdAt": "2026-10-24T17:29:40.923Z",
+        "publishedAt": "2026-10-24T17:30:08.213Z",
+        "opensAt": "2026-10-24T17:30:18.213Z",
+        "closesAt": "2026-10-24T17:31:03.213Z",
+        "homologatedAt": "2026-10-24T17:31:29.916Z",
+        "vencedor": {
+          "lanceId": "7c245ade-f47d-4e80-973c-5f44d58d6045",
+          "fornecedorId": "96d5a67f-104f-4d07-8f1c-f146c4c91510",
+          "fornecedorNome": "Fornecedor Alpha",
+          "valorUnitario": 448,
+          "valorTotal": 1792
+        },
+        "serverNow": "2026-10-24T17:35:38.540Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-011: buscar rascunho como fornecedor",
+      "method": "GET",
+      "path": "/api/compras?q=CD-000307",
+      "expectedStatus": 200,
+      "status": 200,
+      "traceId": "08576911099e41ed",
+      "body": {
+        "content": [],
+        "page": 0,
+        "size": 20,
+        "totalElements": 0,
+        "totalPages": 0,
+        "serverNow": "2026-10-24T17:35:38.546Z"
+      },
+      "passedStatus": true
+    },
+    {
+      "name": "CT-042: senha inválida",
+      "method": "POST",
+      "path": "/api/auth/login",
+      "expectedStatus": 401,
+      "status": 401,
+      "traceId": "15a276bac1a54484",
+      "body": {
+        "code": "CREDENCIAIS_INVALIDAS",
+        "message": "Login ou senha inválidos.",
+        "timestamp": "2026-10-24T17:35:38.618589071Z",
+        "traceId": "15a276bac1a54484"
+      },
+      "passedStatus": true
+    }
+  ],
+  "contentChecks": {
+    "winnerMatchesLowestBid": true,
+    "homologatedWithThreeBids": true,
+    "historyNewestFirst": true,
+    "noDraftInSupplierSearch": true,
+    "desertedWithoutWinner": true,
+    "centsTotalInApi": true
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "command": "npm test",
+  "stats": {
+    "startTime": "2026-10-26T19:31:02.858Z",
+    "duration": 227797.45500000002,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "tests": [
+    {
+      "title": "API-01 | criar rascunhos com identidade e dados persistidos",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 94,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar quantidade zero",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 57,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar quantidade negativa",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 55,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar quantidade acima do limite",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 56,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar quantidade fracionária",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 57,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar valor zero",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 54,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar valor negativo",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 53,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar valor acima do teto",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 54,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar valor com três casas",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 54,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar objeto vazio",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 59,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar objeto curto",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 56,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar objeto longo",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 56,
+      "evidence": []
+    },
+    {
+      "title": "API-02 | rejeitar descrição longa",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 55,
+      "evidence": []
+    },
+    {
+      "title": "API-03 | aceitar limites mínimos",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 63,
+      "evidence": []
+    },
+    {
+      "title": "API-03 | aceitar limites máximos",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 63,
+      "evidence": []
+    },
+    {
+      "title": "API-10 | BUG-005: buscar por objeto preserva o termo ao filtrar por status",
+      "project": "api",
+      "status": "failed",
+      "durationMs": 80,
+      "evidence": [
+        "API-10-busca-sem-status.json",
+        "API-10-busca-RASCUNHO.json"
+      ]
+    },
+    {
+      "title": "API-09 | encerrar sem lances como DESERTA e impedir homologação",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 55848,
+      "evidence": []
+    },
+    {
+      "title": "API-07 | aplicar limites de lance sem persistir rejeições",
+      "project": "api",
+      "status": "failed",
+      "durationMs": 10925,
+      "evidence": [
+        "18-rejeicao-450.json",
+        "18-rejeicao-449.01.json"
+      ]
+    },
+    {
+      "title": "API-08 | aceitar somente um de dois lances simultâneos iguais",
+      "project": "api",
+      "status": "failed",
+      "durationMs": 10979,
+      "evidence": [
+        "19-concorrencia-e-persistencia.json"
+      ]
+    },
+    {
+      "title": "API-04 | fornecedor não cria, publica ou consulta rascunho",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 148,
+      "evidence": []
+    },
+    {
+      "title": "API-05 | recusar acesso sem token e com token inválido",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 9,
+      "evidence": []
+    },
+    {
+      "title": "API-06 | preservar publicação e recusar lance antecipado",
+      "project": "api",
+      "status": "passed",
+      "durationMs": 126,
+      "evidence": []
+    },
+    {
+      "title": "E2E-01 | publicação, disputa e homologação — valores inteiros, fornecedor Beta vencedor",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 57367,
+      "evidence": [
+        "23-resultado-final.json"
+      ]
+    },
+    {
+      "title": "E2E-01 | publicação, disputa e homologação — valores com centavos, fornecedor Alpha vencedor",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 57255,
+      "evidence": [
+        "24-resultado-final.json"
+      ]
+    },
+    {
+      "title": "REG-001 | BUG-001: total de 1 × 0.01",
+      "project": "chromium",
+      "status": "failed",
+      "durationMs": 10390,
+      "evidence": [
+        "25-comparacao-total.json"
+      ]
+    },
+    {
+      "title": "REG-001 | BUG-001: total de 3 × 0.1",
+      "project": "chromium",
+      "status": "failed",
+      "durationMs": 10480,
+      "evidence": [
+        "26-comparacao-total.json"
+      ]
+    },
+    {
+      "title": "REG-001 | BUG-001: total de 3 × 120.5",
+      "project": "chromium",
+      "status": "failed",
+      "durationMs": 10448,
+      "evidence": [
+        "27-comparacao-total.json"
+      ]
+    },
+    {
+      "title": "REG-001 | BUG-001: total de 4 × 450",
+      "project": "chromium",
+      "status": "passed",
+      "durationMs": 436,
+      "evidence": [
+        "28-comparacao-total.json"
+      ]
+    }
+  ]
+}

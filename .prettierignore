@@ -1,0 +1,9 @@
+node_modules/
+resultados/
+playwright-report/
+test-results/
+enunciado/
+*.tar
+*.zip
+package-lock.json
+docs/06-preparacao-do-ambiente.md

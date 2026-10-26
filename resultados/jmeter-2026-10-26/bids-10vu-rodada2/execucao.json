@@ -1,0 +1,131 @@
+{
+  "status": "CONCLUIDO",
+  "scenario": "bids",
+  "users": 10,
+  "durationSeconds": 60,
+  "warmupSeconds": 5,
+  "thinkMs": 100,
+  "timeoutMs": 5000,
+  "baseUrl": "http://localhost:8080/",
+  "p95LimitMs": 1000,
+  "maxErrorRate": 0.01,
+  "startedAt": "2026-10-26T19:42:47.0736967Z",
+  "plan": "lances.jmx",
+  "planSha256": "7182B4826DE3445196A8EBEDBA23F6D5302A7D94D39BDC074618FC0202D9D8B2",
+  "jmeterVersion": "5.6.3",
+  "statistics": {
+    "transaction": "Total",
+    "sampleCount": 5860,
+    "errorCount": 0,
+    "errorPct": 0.0,
+    "meanResTime": 2.0578498293515395,
+    "medianResTime": 2.0,
+    "minResTime": 1.0,
+    "maxResTime": 7.0,
+    "pct1ResTime": 3.0,
+    "pct2ResTime": 3.0,
+    "pct3ResTime": 4.0,
+    "throughput": 97.84278367728578,
+    "receivedKBytesPerSec": 77.69695086572497,
+    "sentKBytesPerSec": 55.275439802060376
+  },
+  "consistency": {
+    "ok": true,
+    "warmupErrors": 0,
+    "checkedAt": "2026-10-26T19:44:03.605998513Z",
+    "purchases": [
+      {
+        "id": "c3ab7ea7-e2f0-4ee2-9856-5dd653da6e34",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "77be68d0-8a5f-49ca-a0b7-46c736020df4",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "6b7c23ba-e72b-4dbc-9124-7c7690765087",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "128f9792-591f-4704-b671-f8a12277f113",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "e9824a9c-d390-4f6e-9582-bfd79b3f703b",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "36817938-62d9-4c83-8609-7c0cc9da4312",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "43bb0373-38dd-402b-a90e-3e93c30ab5d1",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "fbfe8440-478f-452b-a156-aa31f9e24b48",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "4e3647e9-cc0e-4895-a596-2a8174f4ed0d",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      },
+      {
+        "id": "1b4e184b-8863-4f58-8d1d-a3c6bf330382",
+        "acceptedIncludingWarmup": 633,
+        "persisted": 633,
+        "matchesAcceptedBids": true,
+        "temporalOrderMatchesAccepted": true,
+        "decreasingInTime": true,
+        "ok": true
+      }
+    ]
+  },
+  "passed": true,
+  "finishedAt": "2026-10-26T19:44:05.6809464Z"
+}

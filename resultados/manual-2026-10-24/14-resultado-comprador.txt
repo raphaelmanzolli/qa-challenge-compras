@@ -1,0 +1,155 @@
+Browser tab: 1, Title: "QA Challenge — Compras Diretas", URL: "http://localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/resultado".
+1 AXWebArea QA Challenge — Compras Diretas, URL: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/resultado
+	2 container app
+		3 link Description: Pular para o conteúdo, Value: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/resultado#conteudo
+		4 container
+			5 link Description: QA Challenge — Compras Diretas, Value: localhost:8080/compras
+			6 container Principal
+				7 link Description: Compras, Value: localhost:8080/compras
+				8 link Description: Nova compra, Value: localhost:8080/compras/nova
+			9 text Unidade Compradora Demo ORGAO
+			10 button Sair
+		11 container
+			12 heading Resultado CD-000306, Value: 1
+				13 text Resultado  CD-000306
+			14 text HOMOLOGADA (Homologada) QA manual cadeiras 24-10-2026
+			15 container Situação
+				16 heading Situação, Value: 2, ID: resultado-titulo
+					17 text Situação
+				18 container
+					19 text Vencedor:  Fornecedor Alpha  com  R$ 448,00  por unidade (total R$ 1.792,00).
+				20 text Homologada em 24/10/2026, 14:31:29.
+				21 button Baixar relatório (PDF)
+				22 link Description: Detalhes, Value: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23
+				23 link Description: Ver disputa, Value: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/disputa
+			24 container Histórico de lances
+				25 container
+					26 heading Histórico de lances, Value: 2, ID: hist-lances-titulo
+						27 text Histórico de lances
+					28 text Mais recentes primeiro
+				29 table
+					30 row
+						31 cell
+							32 text #
+						33 cell
+							34 text HORÁRIO
+						35 cell
+							36 text FORNECEDOR
+						37 cell
+							38 text VALOR UNITÁRIO
+					39 row
+						40 cell
+							41 text 3
+						42 cell
+							43 text 24/10/2026, 14:30:42
+						44 cell
+							45 text Fornecedor Alpha
+						46 cell
+							47 text R$ 448,00
+					48 row
+						49 cell
+							50 text 2
+						51 cell
+							52 text 24/10/2026, 14:30:37
+						53 cell
+							54 text Fornecedor Beta
+						55 cell
+							56 text R$ 449,00
+					57 row
+						58 cell
+							59 text 1
+						60 cell
+							61 text 24/10/2026, 14:30:24
+						62 cell
+							63 text Fornecedor Alpha
+						64 cell
+							65 text R$ 450,00
+			66 container Histórico da compra
+				67 container
+					68 heading Histórico da compra, Value: 2, ID: hist-aud-titulo
+						69 text Histórico da compra
+					70 text Mais antigos primeiro
+				71 table
+					72 row
+						73 cell
+							74 text HORÁRIO
+						75 cell
+							76 text EVENTO
+						77 cell
+							78 text RESPONSÁVEL
+						79 cell
+							80 text RESUMO
+					81 row
+						82 cell
+							83 text 24/10/2026, 14:29:40
+						84 cell
+							85 text Compra criada
+						86 cell
+							87 text Unidade Compradora Demo (comprador)
+						88 cell
+							89 text Compra CD-000306 criada em rascunho por comprador
+					90 row
+						91 cell
+							92 text 24/10/2026, 14:30:08
+						93 cell
+							94 text Compra publicada
+						95 cell
+							96 text Unidade Compradora Demo (comprador)
+						97 cell
+							98 text Compra publicada; abertura em 2026-10-24T17:30:18.213Z e encerramento em 2026-10-24T17:31:03.213Z
+					99 row
+						100 cell
+							101 text 24/10/2026, 14:30:18
+						102 cell
+							103 text Disputa aberta
+						104 cell
+							105 text Sistema (horário do servidor)
+						106 cell
+							107 text Disputa aberta para lances (horário do servidor)
+					108 row
+						109 cell
+							110 text 24/10/2026, 14:30:24
+						111 cell
+							112 text Lance registrado
+						113 cell
+							114 text Fornecedor Alpha (fornecedor.a)
+						115 cell
+							116 text Lance #1 de R$ 450.00 por Fornecedor Alpha
+					117 row
+						118 cell
+							119 text 24/10/2026, 14:30:37
+						120 cell
+							121 text Lance registrado
+						122 cell
+							123 text Fornecedor Beta (fornecedor.b)
+						124 cell
+							125 text Lance #2 de R$ 449.00 por Fornecedor Beta
+					126 row
+						127 cell
+							128 text 24/10/2026, 14:30:42
+						129 cell
+							130 text Lance registrado
+						131 cell
+							132 text Fornecedor Alpha (fornecedor.a)
+						133 cell
+							134 text Lance #3 de R$ 448.00 por Fornecedor Alpha
+					135 row
+						136 cell
+							137 text 24/10/2026, 14:31:03
+						138 cell
+							139 text Disputa encerrada
+						140 cell
+							141 text Sistema (horário do servidor)
+						142 cell
+							143 text Disputa encerrada com 3 lance(s)
+					144 row
+						145 cell
+							146 text 24/10/2026, 14:31:29
+						147 cell
+							148 text Compra homologada
+						149 cell
+							150 text Unidade Compradora Demo (comprador)
+						151 cell
+							152 text Homologada para Fornecedor Alpha com lance unitário de R$ 448.00
+
+The focused UI element is 1 AXWebArea QA Challenge — Compras Diretas, URL: localhost:8080/compras/072e76d5-60e7-4b46-a112-ce6f8c83ba23/resultado

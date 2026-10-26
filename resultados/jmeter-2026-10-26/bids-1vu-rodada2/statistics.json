@@ -1,0 +1,34 @@
+{
+  "POST lance" : {
+    "transaction" : "POST lance",
+    "sampleCount" : 142,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 4.161971830985917,
+    "medianResTime" : 4.0,
+    "minResTime" : 3.0,
+    "maxResTime" : 6.0,
+    "pct1ResTime" : 6.0,
+    "pct2ResTime" : 6.0,
+    "pct3ResTime" : 6.0,
+    "throughput" : 9.57195820694304,
+    "receivedKBytesPerSec" : 7.5988872387933935,
+    "sentKBytesPerSec" : 5.407595529996629
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 142,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 4.161971830985917,
+    "medianResTime" : 4.0,
+    "minResTime" : 3.0,
+    "maxResTime" : 6.0,
+    "pct1ResTime" : 6.0,
+    "pct2ResTime" : 6.0,
+    "pct3ResTime" : 6.0,
+    "throughput" : 9.57195820694304,
+    "receivedKBytesPerSec" : 7.5988872387933935,
+    "sentKBytesPerSec" : 5.407595529996629
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "compraId": "a597db73-01c3-4517-ba28-bdadf9d24bc8",
+  "respostas": [
+    {
+      "status": 201,
+      "traceId": "73aa7e92d8c3470f",
+      "body": {
+        "id": "659c8a81-36bd-4fee-80e3-8753bf0bd7a8",
+        "compraId": "a597db73-01c3-4517-ba28-bdadf9d24bc8",
+        "fornecedorId": "32cf6e9a-c446-433d-978d-cc1c95a0029f",
+        "fornecedorNome": "Fornecedor Alpha",
+        "valorUnitario": 450,
+        "createdAt": "2026-10-26T19:32:22.439Z",
+        "sequencia": 1
+      }
+    },
+    {
+      "status": 500,
+      "traceId": "74b188f9413f402f",
+      "body": {
+        "code": "UNEXPECTED_ERROR",
+        "message": "Erro inesperado. Informe o traceId ao suporte.",
+        "timestamp": "2026-10-26T19:32:22.445524929Z",
+        "traceId": "74b188f9413f402f"
+      }
+    }
+  ],
+  "historico": [
+    {
+      "id": "659c8a81-36bd-4fee-80e3-8753bf0bd7a8",
+      "compraId": "a597db73-01c3-4517-ba28-bdadf9d24bc8",
+      "fornecedorId": "32cf6e9a-c446-433d-978d-cc1c95a0029f",
+      "fornecedorNome": "Fornecedor Alpha",
+      "valorUnitario": 450,
+      "createdAt": "2026-10-26T19:32:22.439Z",
+      "sequencia": 1
+    }
+  ]
+}

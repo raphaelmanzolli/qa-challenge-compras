@@ -1,0 +1,31 @@
+{
+  "params": {
+    "q": "QA busca a32128da-1d46-487e-a6f3-0c46bd198842"
+  },
+  "esperado": [
+    "3b8a93fc-b135-4b9d-94bd-dfd2ff491344"
+  ],
+  "compraSemCorrespondencia": "3359d64f-03b1-4c1c-885e-ee88238f30ae",
+  "resposta": {
+    "content": [
+      {
+        "id": "3b8a93fc-b135-4b9d-94bd-dfd2ff491344",
+        "codigo": "CD-000459",
+        "objeto": "QA busca a32128da-1d46-487e-a6f3-0c46bd198842",
+        "status": "RASCUNHO",
+        "quantidade": 4,
+        "valorMaximoUnitario": 450,
+        "valorTotalEstimado": 1800,
+        "menorLanceUnitario": null,
+        "totalLances": 0,
+        "opensAt": null,
+        "closesAt": null
+      }
+    ],
+    "page": 0,
+    "size": 20,
+    "totalElements": 1,
+    "totalPages": 1,
+    "serverNow": "2026-10-26T19:31:04.207Z"
+  }
+}

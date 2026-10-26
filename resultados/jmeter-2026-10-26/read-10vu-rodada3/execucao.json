@@ -1,0 +1,40 @@
+{
+  "status": "CONCLUIDO",
+  "scenario": "read",
+  "users": 10,
+  "durationSeconds": 60,
+  "warmupSeconds": 5,
+  "thinkMs": 100,
+  "timeoutMs": 5000,
+  "baseUrl": "http://localhost:8080/",
+  "p95LimitMs": 1000,
+  "maxErrorRate": 0.01,
+  "startedAt": "2026-10-26T19:38:33.5220317Z",
+  "plan": "leitura.jmx",
+  "planSha256": "32ED626A22E19D78A55BEEF949F0F9D4C564592A8AF28034735694315983E2A2",
+  "jmeterVersion": "5.6.3",
+  "statistics": {
+    "transaction": "Total",
+    "sampleCount": 5880,
+    "errorCount": 0,
+    "errorPct": 0.0,
+    "meanResTime": 1.5455782312925201,
+    "medianResTime": 2.0,
+    "minResTime": 0.0,
+    "maxResTime": 5.0,
+    "pct1ResTime": 2.0,
+    "pct2ResTime": 2.0,
+    "pct3ResTime": 3.0,
+    "throughput": 98.31625060611634,
+    "receivedKBytesPerSec": 376.1984840298794,
+    "sentKBytesPerSec": 49.68619110221211
+  },
+  "consistency": {
+    "ok": true,
+    "warmupErrors": 0,
+    "checkedAt": "2026-10-26T19:39:39.558681742Z",
+    "purchases": []
+  },
+  "passed": true,
+  "finishedAt": "2026-10-26T19:39:41.6349877Z"
+}

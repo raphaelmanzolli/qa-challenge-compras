@@ -1,0 +1,23 @@
+{
+  "compraId": "e37be6c0-9adc-455e-b4c1-37b847752ca8",
+  "valor": 449.01,
+  "status": 422,
+  "traceId": "c13172a7c6614138",
+  "body": {
+    "code": "LANCE_INSUFICIENTE",
+    "message": "O lance deve ser ao menos R$ 1,00 menor que o menor lance vigente (R$ 450.00).",
+    "timestamp": "2026-10-26T19:32:11.215273629Z",
+    "traceId": "c13172a7c6614138"
+  },
+  "historico": [
+    {
+      "id": "5f51cf13-2b59-444f-8823-a6753d92e8f5",
+      "compraId": "e37be6c0-9adc-455e-b4c1-37b847752ca8",
+      "fornecedorId": "32cf6e9a-c446-433d-978d-cc1c95a0029f",
+      "fornecedorNome": "Fornecedor Alpha",
+      "valorUnitario": 450,
+      "createdAt": "2026-10-26T19:32:11.202Z",
+      "sequencia": 1
+    }
+  ]
+}
